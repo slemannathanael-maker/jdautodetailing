@@ -9,15 +9,9 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SupercarsRouteImport } from './routes/supercars'
 import { Route as CarsRouteImport } from './routes/cars'
 import { Route as IndexRouteImport } from './routes/index'
 
-const SupercarsRoute = SupercarsRouteImport.update({
-  id: '/supercars',
-  path: '/supercars',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CarsRoute = CarsRouteImport.update({
   id: '/cars',
   path: '/cars',
@@ -32,42 +26,31 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cars': typeof CarsRoute
-  '/supercars': typeof SupercarsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cars': typeof CarsRoute
-  '/supercars': typeof SupercarsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cars': typeof CarsRoute
-  '/supercars': typeof SupercarsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cars' | '/supercars'
+  fullPaths: '/' | '/cars'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cars' | '/supercars'
-  id: '__root__' | '/' | '/cars' | '/supercars'
+  to: '/' | '/cars'
+  id: '__root__' | '/' | '/cars'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CarsRoute: typeof CarsRoute
-  SupercarsRoute: typeof SupercarsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/supercars': {
-      id: '/supercars'
-      path: '/supercars'
-      fullPath: '/supercars'
-      preLoaderRoute: typeof SupercarsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/cars': {
       id: '/cars'
       path: '/cars'
@@ -88,7 +71,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CarsRoute: CarsRoute,
-  SupercarsRoute: SupercarsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
