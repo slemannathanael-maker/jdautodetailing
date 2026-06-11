@@ -6,6 +6,10 @@ import silverPorscheAsset from "@/assets/silver-porsche.jpeg.asset.json";
 import r8RearwashAsset from "@/assets/r8-rearwash.jpeg.asset.json";
 import redPorscheAsset from "@/assets/red-porsche.jpeg.asset.json";
 import r8FoamAsset from "@/assets/r8-foam.jpeg.asset.json";
+import mustangMachEAsset from "@/assets/mustang-mach-e.png.asset.json";
+import porscheMacanWhiteAsset from "@/assets/porsche-macan-white.png.asset.json";
+import bmw435iGrayAsset from "@/assets/bmw-435i-gray.png.asset.json";
+import mercedesE350GrayAsset from "@/assets/mercedes-e350-gray.png.asset.json";
 
 export const Route = createFileRoute("/cars")({
   head: () => ({
@@ -21,6 +25,10 @@ export const Route = createFileRoute("/cars")({
 });
 
 const gallery = [
+  { src: mustangMachEAsset.url, title: "Ford Mustang Mach-E", note: "Exterior + interior service" },
+  { src: porscheMacanWhiteAsset.url, title: "Porsche Macan", note: "Exterior detail service" },
+  { src: bmw435iGrayAsset.url, title: "BMW 435i", note: "Exterior detail service" },
+  { src: mercedesE350GrayAsset.url, title: "Mercedes-Benz E350", note: "Standard interior/exterior service" },
   { src: mclarenAsset.url, title: "McLaren", note: "Exterior showcase" },
   { src: detailSignAsset.url, title: "On-site detail", note: "Client location service" },
   { src: silverPorscheAsset.url, title: "Porsche", note: "Wash + gloss" },
