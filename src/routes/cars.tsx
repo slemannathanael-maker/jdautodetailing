@@ -33,7 +33,7 @@ function CarsPage() {
   return (
     <Layout>
       <section className="container mx-auto px-6 pt-20 pb-10">
-        <h1 className="text-5xl md:text-6xl font-display font-bold mb-4">Cars <span className="text-gradient-brand">Gallery</span></h1>
+        <h1 className="text-5xl md:text-6xl font-display font-bold mb-4">Cars <span className="text-brand-blue">Gallery</span></h1>
         <p className="text-muted-foreground max-w-2xl">Real customer work. Send more photos anytime and this tab can keep growing.</p>
       </section>
 

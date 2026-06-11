@@ -54,8 +54,8 @@
   --input: oklch(0.84 0.012 235);
   --ring: oklch(0.52 0.14 244);
 
-  --gradient-brand: linear-gradient(135deg, oklch(0.43 0.145 244), oklch(0.68 0.145 175));
-  --gradient-page: linear-gradient(180deg, oklch(0.95 0.006 240), oklch(0.9 0.01 235));
+  --brand-blue: oklch(0.43 0.145 244);
+  --brand-green: oklch(0.68 0.145 175);
   --shadow-brand: 0 16px 44px -20px oklch(0.42 0.14 244 / 0.45);
 }
 
@@ -65,7 +65,7 @@
   }
 
   body {
-    background: var(--gradient-page);
+    background: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     min-height: 100vh;
@@ -80,17 +80,8 @@
   }
 }
 
-@utility text-gradient-brand {
-  background: var(--gradient-brand);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-@utility bg-gradient-brand {
-  background: var(--gradient-brand);
-}
-
-@utility shadow-brand {
-  box-shadow: var(--shadow-brand);
-}
+@utility text-brand-blue { color: var(--brand-blue); }
+@utility text-brand-green { color: var(--brand-green); }
+@utility bg-brand-blue { background-color: var(--brand-blue); }
+@utility bg-brand-green { background-color: var(--brand-green); }
+@utility shadow-brand { box-shadow: var(--shadow-brand); }
