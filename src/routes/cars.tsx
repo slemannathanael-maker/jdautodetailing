@@ -12,6 +12,11 @@ import mustangMachEAsset from "@/assets/mustang-mach-e.png.asset.json";
 import porscheMacanWhiteAsset from "@/assets/porsche-macan-white.png.asset.json";
 import bmw435iGrayAsset from "@/assets/bmw-435i-gray.png.asset.json";
 import mercedesE350GrayAsset from "@/assets/mercedes-e350-gray.png.asset.json";
+import bentleyFlyingSpurAsset from "@/assets/bentley-flying-spur-red.jpeg.asset.json";
+import bmwM8Asset from "@/assets/bmw-m8-white.jpeg.asset.json";
+import bmwX4mAsset from "@/assets/bmw-x4m-blue.jpeg.asset.json";
+import cybertruckAsset from "@/assets/tesla-cybertruck-camo.jpeg.asset.json";
+import lexusIsAsset from "@/assets/lexus-is-gold.jpeg.asset.json";
 
 export const Route = createFileRoute("/cars")({
   head: () => ({
