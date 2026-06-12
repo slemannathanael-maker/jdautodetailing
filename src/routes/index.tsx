@@ -5,6 +5,8 @@ import techartFrontAsset from "@/assets/techart-red-front.png.asset.json";
 import audiCeramicAsset from "@/assets/audi-sq8-ceramic.png.asset.json";
 import cadillacPolishAsset from "@/assets/cadillac-polish.png.asset.json";
 import r8RearwashAsset from "@/assets/r8-rearwash.jpeg.asset.json";
+import mustangBeforeAsset from "@/assets/mustang-before.jpg.asset.json";
+import mustangAfterAsset from "@/assets/mustang-after.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
