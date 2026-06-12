@@ -26,7 +26,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="container mx-auto px-6 py-12 grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <img src={logoAsset.url} alt="" className="h-10 w-10 rounded-full object-cover object-[center_30%] scale-150" />
+              <img src={logoAsset.url} alt="" className="h-10 w-10 rounded-full object-cover bg-[#0a1b3a]" />
               <h3 className="text-2xl font-display font-bold text-foreground">JD Auto Detailing</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">Premium mobile detailing, ceramic coatings & paint correction across North NJ.</p>
