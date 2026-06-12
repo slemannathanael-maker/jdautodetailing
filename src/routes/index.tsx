@@ -47,8 +47,8 @@ function Home() {
     <Layout>
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
-        <img src={techartFrontAsset.url} alt="Red TechArt GTstreet R Porsche detailed by JD Auto Detailing" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/20" />
+        <img src={techartFrontAsset.url} alt="Red TechArt GTstreet R Porsche detailed by JD Auto Detailing" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/40 to-transparent" />
         <div className="relative container mx-auto px-6 py-20">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-green/40 bg-brand-green/10 text-brand-green text-xs uppercase tracking-[0.2em] mb-6">
