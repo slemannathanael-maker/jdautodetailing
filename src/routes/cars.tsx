@@ -12,6 +12,11 @@ import mustangMachEAsset from "@/assets/mustang-mach-e.png.asset.json";
 import porscheMacanWhiteAsset from "@/assets/porsche-macan-white.png.asset.json";
 import bmw435iGrayAsset from "@/assets/bmw-435i-gray.png.asset.json";
 import mercedesE350GrayAsset from "@/assets/mercedes-e350-gray.png.asset.json";
+import bentleyFlyingSpurAsset from "@/assets/bentley-flying-spur-red.jpeg.asset.json";
+import bmwM8Asset from "@/assets/bmw-m8-white.jpeg.asset.json";
+import bmwX4mAsset from "@/assets/bmw-x4m-blue.jpeg.asset.json";
+import cybertruckAsset from "@/assets/tesla-cybertruck-camo.jpeg.asset.json";
+import lexusIsAsset from "@/assets/lexus-is-gold.jpeg.asset.json";
 
 export const Route = createFileRoute("/cars")({
   head: () => ({
@@ -28,6 +33,11 @@ export const Route = createFileRoute("/cars")({
 
 const gallery = [
   { src: techartRearAsset.url, title: "TechArt GTstreet R America", note: "One of ten worldwide. 1000+ HP widebody on Porsche 911 Turbo S. Every surface detailed and protected.", featured: true },
+  { src: bentleyFlyingSpurAsset.url, title: "Bentley Flying Spur", note: "Full exterior detail, mirror gloss finish" },
+  { src: bmwM8Asset.url, title: "BMW M8 Competition", note: "Exterior detail and paint enhancement" },
+  { src: bmwX4mAsset.url, title: "BMW X4 M", note: "Deep gloss exterior detail" },
+  { src: cybertruckAsset.url, title: "Tesla Cybertruck", note: "Wrapped surface care and detail" },
+  { src: lexusIsAsset.url, title: "Lexus IS F-Sport", note: "Exterior wash and gloss enhancement" },
   { src: mclarenAsset.url, title: "McLaren", note: "Exterior detail" },
   { src: mustangMachEAsset.url, title: "Ford Mustang Mach-E", note: "Exterior + interior service" },
   { src: porscheMacanWhiteAsset.url, title: "Porsche Macan", note: "Exterior detail service" },
