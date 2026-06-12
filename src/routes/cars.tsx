@@ -33,6 +33,11 @@ export const Route = createFileRoute("/cars")({
 
 const gallery = [
   { src: techartRearAsset.url, title: "TechArt GTstreet R America", note: "One of ten worldwide. 1000+ HP widebody on Porsche 911 Turbo S. Every surface detailed and protected.", featured: true },
+  { src: bentleyFlyingSpurAsset.url, title: "Bentley Flying Spur", note: "Full exterior detail, mirror gloss finish" },
+  { src: bmwM8Asset.url, title: "BMW M8 Competition", note: "Exterior detail and paint enhancement" },
+  { src: bmwX4mAsset.url, title: "BMW X4 M", note: "Deep gloss exterior detail" },
+  { src: cybertruckAsset.url, title: "Tesla Cybertruck", note: "Wrapped surface care and detail" },
+  { src: lexusIsAsset.url, title: "Lexus IS F-Sport", note: "Exterior wash and gloss enhancement" },
   { src: mclarenAsset.url, title: "McLaren", note: "Exterior detail" },
   { src: mustangMachEAsset.url, title: "Ford Mustang Mach-E", note: "Exterior + interior service" },
   { src: porscheMacanWhiteAsset.url, title: "Porsche Macan", note: "Exterior detail service" },
