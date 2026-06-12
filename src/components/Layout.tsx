@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 import type { ReactNode } from "react";
-import logoAsset from "@/assets/jd-logo.png.asset.json";
+import logoAsset from "@/assets/jd-logo-icon.jpg.asset.json";
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
