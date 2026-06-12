@@ -9,7 +9,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/90 border-b border-border">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between gap-3">
           <Link to="/" className="flex items-center gap-4 sm:gap-6 min-w-0">
-            <img src={logoAsset.url} alt="JD Auto Detailing logo" className="h-9 w-9 rounded-full object-cover bg-[#0a1b3a]" loading="eager" />
+            <img src={logoAsset.url} alt="JD Auto Detailing logo" className="h-10 w-10 rounded-full object-contain bg-[#0a1b3a] p-1" loading="eager" />
             <span className="font-display text-lg sm:text-xl font-bold text-foreground truncate">JD Auto Detailing</span>
           </Link>
           <div className="flex items-center gap-1 sm:gap-3">
