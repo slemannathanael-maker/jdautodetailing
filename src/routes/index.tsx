@@ -189,6 +189,25 @@ function Home() {
           <div className="p-8 rounded-xl bg-card border border-border text-center"><MapPin className="h-8 w-8 text-brand-green mx-auto mb-3" /><p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Based In</p><p className="font-display text-lg">Clifton, NJ 07014</p></div>
         </div>
       </section>
+
+      {/* BEFORE / AFTER */}
+      <section className="container mx-auto px-6 pb-24">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-3">Transformations</p>
+          <h2 className="text-4xl md:text-5xl font-display font-bold">Before &amp; <span className="text-brand-blue">After</span></h2>
+          <p className="text-muted-foreground mt-4">Mustang Mach-E interior detail. See the difference.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="relative rounded-xl overflow-hidden border border-border bg-card">
+            <img src={mustangBeforeAsset.url} alt="Mustang Mach-E interior before detailing" loading="lazy" className="w-full h-full object-cover aspect-[4/5]" />
+            <span className="absolute top-4 left-4 px-3 py-1 rounded-md bg-brand-blue text-primary-foreground text-xs font-semibold uppercase tracking-widest">Before</span>
+          </div>
+          <div className="relative rounded-xl overflow-hidden border border-border bg-card">
+            <img src={mustangAfterAsset.url} alt="Mustang Mach-E interior after detailing" loading="lazy" className="w-full h-full object-cover aspect-[4/5]" />
+            <span className="absolute top-4 left-4 px-3 py-1 rounded-md bg-brand-green text-primary-foreground text-xs font-semibold uppercase tracking-widest">After</span>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
